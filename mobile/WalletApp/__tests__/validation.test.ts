@@ -1,5 +1,9 @@
 // mobile/WalletApp/__tests__/validation.test.ts
-import { validatePhone, validateOtp, validateAmount } from '../src/utils/validation';
+import {
+  validatePhone,
+  validateOtp,
+  validateAmount,
+} from '../src/utils/validation';
 
 describe('validation utils', () => {
   test('validatePhone', () => {

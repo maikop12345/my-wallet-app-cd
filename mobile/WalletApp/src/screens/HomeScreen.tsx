@@ -58,7 +58,7 @@ export default function HomeScreen({ navigation }: Props) {
     } catch (err: any) {
       Alert.alert('Error', err.message);
     }
-  }, [navigation]);
+  }, [navigation, balance]);
 
   useFocusEffect(
     useCallback(() => {

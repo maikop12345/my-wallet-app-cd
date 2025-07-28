@@ -7,8 +7,7 @@
 export function formatCurrency(val: number): string {
   // forzar dos decimales si tiene parte decimal
   const parts = val.toFixed(2).split('.');
-  const intPart = parts[0]
-    .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  const intPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   const decPart = parts[1];
   return `$${intPart}.${decPart}`;
 }

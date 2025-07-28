@@ -19,7 +19,9 @@ export function validateOtp(otp: string): boolean {
  */
 export function validateAmount(amount: string): boolean {
   // sólo dígitos y opcional punto con 1 o 2 decimales
-  if (!/^\d+(\.\d{1,2})?$/.test(amount)) return false;
+  if (!/^\d+(\.\d{1,2})?$/.test(amount)) {
+    return false;
+  }
   const n = parseFloat(amount);
   return !isNaN(n) && n > 0;
 }
