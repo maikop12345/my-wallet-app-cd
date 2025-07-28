@@ -108,20 +108,18 @@ Accede a Swagger UI en:
 http://localhost:3000/docs
 ```
 Allí encontrarás esquemas de requests, responses y códigos de error.
-
+---
 ## 🔌 Endpoints
-Método	Ruta	Descripción	Payload / Query	Respuestas
-POST	/otp	Genera OTP si usuario existe	{ phone: "3001234567" }	200 { success, message }
-404/400 { error }
-POST	/login	Valida OTP y retorna JWT	{ phone, otp }	200 { token }
-400/401 { error }
-GET	/saldo	Devuelve { balance, name }	Header Authorization: Bearer <token>	200 { balance, name }
-401/404
-POST	/transferir	Realiza transferencia	{ to, amount }	200 { success, newBalance, transfer }
-400/404
-GET	/transferencias	Lista paginada de transferencias	Query ?page=1&pageSize=10 + auth	200 { transfers[], pagination }
-401
-GET	/health	Health‑check	—	200 { status: "ok" }
+---
+| Método | Ruta               | Descripción                         | Payload / Query                            | Respuestas                                     |
+| ------ | ------------------ | ----------------------------------- | ------------------------------------------- | ---------------------------------------------- |
+| POST   | `/otp`             | Genera OTP si usuario existe        | `{ phone: "3001234567" }`                   | 200 `{ success, message }`<br>400/404 `{ error }` |
+| POST   | `/login`           | Valida OTP y retorna JWT            | `{ phone, otp }`                            | 200 `{ token }`<br>400/401 `{ error }`         |
+| GET    | `/saldo`           | Devuelve `{ balance, name }`        | Header `Authorization: Bearer <token>`      | 200 `{ balance, name }`<br>401/404             |
+| POST   | `/transferir`      | Realiza transferencia                | `{ to, amount }`                            | 200 `{ success, newBalance, transfer }`<br>400/404 |
+| GET    | `/transferencias`  | Lista paginada de transferencias    | Query `?page=1&pageSize=10` + auth header   | 200 `{ transfers[], pagination }`<br>401       |
+| GET    | `/health`          | Health‑check                        | —                                           | 200 `{ status: "ok" }`                         |
+
 
 ## 🔍 Pruebas & Lint
 ```bash
