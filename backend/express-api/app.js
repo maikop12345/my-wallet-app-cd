@@ -6,7 +6,7 @@ const morgan       = require('morgan');
 const jwt          = require('jsonwebtoken');
 const swaggerUi    = require('swagger-ui-express');
 const swaggerSpec  = require('./config/swagger');
-
+const errorLogger    = require('./middlewares/errorLogger');
 const healthRoutes   = require('./routes/health.routes');
 const otpRoutes      = require('./routes/otp.routes');
 const authRoutes     = require('./routes/auth.routes');
@@ -60,5 +60,6 @@ app.use('/login',        authRoutes);
 app.use('/saldo',        balanceRoutes);
 app.use('/transferir',   transferRoutes);
 app.use('/transferencias', historyRoutes);
-
+// 5) Logger de errores (por si cae un `throw` o next(err))
+app.use(errorLogger);
 module.exports = app;
