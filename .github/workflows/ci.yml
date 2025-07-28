@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  backend:
+    name: Backend Build, Lint & Test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend/express-api
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Lint Backend
+        run: yarn lint
+
+      - name: Run Backend Tests
+        run: yarn test
+
+      - name: Build Docker image
+        run: docker build -t wallet-backend:ci .
+
+  mobile:
+    name: Mobile Build, Lint & Test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mobile/WalletApp
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Lint Mobile
+        run: yarn lint
+
+      - name: Run Mobile Tests
+        run: yarn test

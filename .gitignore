@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.yarn-integrity
+
+# Env files
+*.env
+
+# React Native
+android/app/build/
+ios/Pods/
+ios/build/
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+build/
+DerivedData/
+
+# IDEs
+.vscode/
+*.swp

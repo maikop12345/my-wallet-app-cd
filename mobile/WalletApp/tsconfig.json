@@ -1,0 +1,13 @@
+// mobile/WalletApp/tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {}
+  },
+  "include": ["src/**/*", "__tests__/**/*"]
+}

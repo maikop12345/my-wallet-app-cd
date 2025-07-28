@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1753682977880" clover="3.2.0">
+  <project timestamp="1753682977880" name="All files">
+    <metrics statements="100" coveredstatements="99" conditionals="38" coveredconditionals="38" methods="6" coveredmethods="6" elements="144" coveredelements="143" complexity="0" loc="100" ncloc="100" packages="1" files="6" classes="6"/>
+    <file name="auth.controller.js" path="C:\Users\maiko\my-wallet-app\backend\express-api\controllers\auth.controller.js">
+      <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="7" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="21" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="30" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="34" count="2" type="stmt"/>
+      <line num="35" count="2" type="stmt"/>
+      <line num="38" count="2" type="stmt"/>
+      <line num="44" count="2" type="stmt"/>
+    </file>
+    <file name="balance.controller.js" path="C:\Users\maiko\my-wallet-app\backend\express-api\controllers\balance.controller.js">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+    </file>
+    <file name="health.controller.js" path="C:\Users\maiko\my-wallet-app\backend\express-api\controllers\health.controller.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+    </file>
+    <file name="history.controller.js" path="C:\Users\maiko\my-wallet-app\backend\express-api\controllers\history.controller.js">
+      <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="8" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="4" type="stmt"/>
+      <line num="14" count="4" type="stmt"/>
+      <line num="26" count="3" type="stmt"/>
+      <line num="28" count="3" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+    </file>
+    <file name="otp.controller.js" path="C:\Users\maiko\my-wallet-app\backend\express-api\controllers\otp.controller.js">
+      <metrics statements="16" coveredstatements="16" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="9" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+    </file>
+    <file name="transfer.controller.js" path="C:\Users\maiko\my-wallet-app\backend\express-api\controllers\transfer.controller.js">
+      <metrics statements="40" coveredstatements="39" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="11" type="stmt"/>
+      <line num="6" count="11" type="stmt"/>
+      <line num="9" count="11" type="cond" truecount="4" falsecount="0"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="14" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="21" count="9" type="stmt"/>
+      <line num="22" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="27" count="7" type="stmt"/>
+      <line num="28" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="34" count="6" type="stmt"/>
+      <line num="36" count="6" type="stmt"/>
+      <line num="42" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="49" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="50" count="1" type="stmt"/>
+      <line num="51" count="1" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="61" count="1" type="stmt"/>
+      <line num="67" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="68" count="1" type="stmt"/>
+      <line num="75" count="1" type="stmt"/>
+      <line num="81" count="2" type="stmt"/>
+      <line num="82" count="2" type="stmt"/>
+      <line num="83" count="2" type="stmt"/>
+      <line num="84" count="2" type="stmt"/>
+      <line num="86" count="2" type="stmt"/>
+      <line num="87" count="2" type="stmt"/>
+      <line num="89" count="2" type="stmt"/>
+      <line num="98" count="1" type="stmt"/>
+      <line num="100" count="1" type="stmt"/>
+      <line num="106" count="1" type="stmt"/>
+      <line num="107" count="1" type="stmt"/>
+      <line num="108" count="1" type="stmt"/>
+      <line num="113" count="1" type="stmt"/>
+      <line num="114" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
